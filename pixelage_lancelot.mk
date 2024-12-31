@@ -12,9 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lancelot
+# Pixelage Specific Flags
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PIXELAGE_BUILDTYPE := OFFICIAL
+PIXELAGE_BUILD=lancelot
+
+PRODUCT_NAME := pixelage_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
