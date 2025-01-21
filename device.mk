@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayLancelot \
     SystemUIOverlayLancelot
 
-# Rootdir
+# Init
 PRODUCT_PACKAGES += \
     init.project.rc
 
