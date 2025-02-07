@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Pixelage Specific Flags
+PIXELAGE_MAINTAINER := hipexscape
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 PIXELAGE_BUILDTYPE := OFFICIAL
